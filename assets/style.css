@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
+#title{
+    font-family: 'Ubuntu', sans-serif;
+    color: #fcfcfc;
+}
+
+nav{
+    background-color: #212421;
+}
+
+#hlogo{
+    width: 80px;
+    
+}
+
+#footer{
+    background-color: #212421;
+}
+
+#footerText{
+    color: #fcfcfc;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: #fcfcfc;
+}
+
+.nav-link:hover{
+    color: #06bf28;
+}
+
+#clubs, #players{
+    color: #000;
+    text-decoration: none;
+}
+
+#clubs:hover{
+    color: #06bf28;
+    transition: 0.3s
+}
+
+#players:hover{
+    color: #06bf28;
+    transition: 0.3s
+}
+
+#border{
+    background-color: #000;
+}
+
+.match h3, .match h4{
+    color: #fcfcfc;
+}
+
+.date div, .season div{
+    color: #fcfcfc;
+
+}

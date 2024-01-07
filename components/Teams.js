@@ -7,12 +7,18 @@ export function teams(){
 }
 
 export function getTeams(teams) {
-    let html = `<div class="container my-5">`
+    let html = `<div class="row my-5">`
 
     for(let data of teams){
         html += `
-        <div class="w-25 my-3">
-            <a id="clubs" href="team.html?id=${data.id}"> <span><h1>Name: ${data.name}</h1></span> </a>
+        <div class="col-3 mb-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">${data.full_name}</h5>
+                    <p class="card-text">City: <b>${data.city}</b></p>
+                    <a href="team.html?id=${data.id}" class="btn btn-success">More <i class="fa-solid fa-circle-right fa-sm" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
         </div>
         `
     }

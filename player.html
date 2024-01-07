@@ -25,11 +25,11 @@
         const footer = document.querySelector('footer')
         const player = document.querySelector('#player')
 
-        // get specific team
+        // get specific player
         const id = window.location.href.split('?')[1]
         const urlParam = new URLSearchParams(id)
         let value = urlParam.get('id')
-
+        
         getPlayer(value).then(data => player.innerHTML = takePlayer(data))
         
         initHeader(header)
